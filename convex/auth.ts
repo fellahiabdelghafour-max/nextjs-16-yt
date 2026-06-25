@@ -7,7 +7,8 @@ import { betterAuth } from "better-auth/minimal";
 import authConfig from "./auth.config";
 
 const siteUrl = process.env.SITE_URL!;
-
+console.log("SITE_URL =", process.env.SITE_URL);
+console.log("BETTER_AUTH_SECRET =", process.env.BETTER_AUTH_SECRET);
 // The component client has methods needed for integrating Convex with Better Auth,
 // as well as helper methods for general use.
 export const authComponent = createClient<DataModel>(components.betterAuth);
