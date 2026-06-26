@@ -36,5 +36,7 @@ export const options = createAuthOptions({} as GenericCtx<DataModel>);
 
 // Better Auth Instance
 export const createAuth = (ctx: GenericCtx<DataModel>) => {
+    console.log("AUTH FILE IS RUNNING");
+console.log(process.env.BETTER_AUTH_SECRET);
   return betterAuth(createAuthOptions(ctx));
 };
